@@ -6,12 +6,19 @@
     color: black;
     
 }
-.buttons{
+.buttongrp{
     display: inline-flex;
-    text-align: right;
-    margin-left: 80rem;
+    width: 25%;
+    
 }
+.buttons{
+    width: 50%;
+    display: inline-flex;
+    justify-content: flex-end;
+    }
 .gsa{
+    margin-left: 1.5%;
+    width: 50%;
     color: black;
     text-decoration: none;
 }
@@ -21,51 +28,94 @@
     width: 30px;
 }
 nav{
-    margin-left: 2rem;
+    width: 100%;
     margin-top: 10px;
     font-size: 1.2rem;
     display: inline-flex;
-    text-align: center;
     font-family: 'Barlow', sans-serif;
 }
-h1{
-    font-size: 40px;
-    font-family: 'Titillium Web', sans-serif;
-    margin-left: 2.5rem;
-    margin-top: 5rem;
+
+@media(min-width: 991px){
+    h1{
+        font-size: 40px;
+        font-family: 'Titillium Web', sans-serif;
+        margin-left: 4%;
+        margin-top: 5rem;
+    }
+    ul{
+        margin-left: 15%;
+        margin-top: 6rem;
+        font-family: 'PT Sans', sans-serif;
+    }
+    li{
+        font-size: 20px;
+        margin-top: 1%;
+    }
+    p{
+        width: 50%;
+        }
+    h4{
+        text-decoration: underline;
+    }
+    h6{
+         color: gray;
+        font-weight: lighter;
+    }
+    .hdntext{
+        opacity: 0;
+        
+        margin-top: 5px;
+      }
+    .para{
+        width: 50%;
+    }
 }
-ul{
-    margin-left: 20rem;
-    margin-top: 6rem;
-    font-family: 'PT Sans', sans-serif;
-}
-li{
-    font-size: 20px;
-    margin-top: 1%;
-}
+
 .svgcat{
     height: 25px;
     width: 25px;
 }
-p{
-    width: 50%;
+
+
+@media(max-width: 990px){
+    ul{
+        text-align: center;
+        margin-top: 6rem;
+        font-family: 'PT Sans', sans-serif;
     }
-h4{
-    text-decoration: underline;
-}
-h6{
-     color: gray;
-    font-weight: lighter;
-}
-.hdntext{
-    opacity: 0;
+    h1{
+        font-size: 40px;
+        font-family: 'Titillium Web', sans-serif;
+        margin-top: 5rem;
+    }
+    li{
+        text-align: center;
+        font-size: 20px;
+        margin-top: 1%;
+    }
+    p{
+        text-align: center;
+       
+        width: 50%;
+        }
+        .para{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    h4{
+        text-decoration: underline;
+    }
+    h6{
+         color: gray;
+        font-weight: lighter;
+    }
+    .hdntext{
+        opacity: 0;
+        
+        margin-top: 5px;
+      }
+    .para{
+        width: 50%;
+    }
     
-    margin-top: 5px;
-  }
-.para{
-    width: 50%;
 }
-h4:hover:hover .hdntext {
-    opacity: 1;
-    transition: opacity 0.3s ease; /* Adding a smooth transition effect */
-  }
